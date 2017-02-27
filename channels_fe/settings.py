@@ -31,6 +31,8 @@ ALLOWED_HOSTS = []
 
 # Application definition
 
+'ENGINE': 'django.db.backends.postgresql_psycopg2'
+
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
