@@ -116,7 +116,7 @@
         startUpSockets()
       }
       function startUpSockets() {
-        socket = new WebSocket("ws://" + "localhost:8000" + "/chat/")
+        socket = new WebSocket("ws://" + "lit-cove-15956.herokuapp.com/" + "/chat/")
         socket.onmessage = function(e) {
           var node = document.createElement("p")
           var textNode = document.createTextNode(e.data)
@@ -147,9 +147,6 @@
 
           </div>
 
-          <!-- Your message: <input type="text" id="smessage">
-          <button type="submit" onclick="sendMessage()">Send</button> -->
-
           <div >
             <div class="input-group">
               <input type="text" class="form-control" placeholder="Search for..." id="message"
@@ -161,6 +158,7 @@
             </div><!-- /input-group -->
           </div>
     </div>
+    <!-- Will later update to dynamically take in a sequence of Thread models and generate a tree based off of it-->
     <div class="col-lg-7">
       <div class="tree">
       	<ul>
@@ -200,6 +198,6 @@
       		</li>
       	</ul>
       </div>
-</div>
+    </div>
   </body>
 <html>
