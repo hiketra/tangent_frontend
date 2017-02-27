@@ -1,1 +1,1 @@
-web: gunicorn channels_fe.wsgi --log-file -
+web: gunicorn channels_fe.wsgi:application --log-file -
