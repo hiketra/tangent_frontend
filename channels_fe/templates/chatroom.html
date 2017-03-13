@@ -131,7 +131,7 @@
       }
       function sendMessage(){
         socket.send(username + ": " + document.getElementById("message").value)
-        document.getElementById("message").clear()
+        document.getElementById("message").val('')
       }
     </script>
     <title>
